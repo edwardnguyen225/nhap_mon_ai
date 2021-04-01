@@ -171,7 +171,7 @@ class DepthFirstSearch:
 
 def main():
     # 123406758
-    new_state = [1, 2, 3, 4, 5, 6, 7, 8, 0]
+    new_state = [1, 2, 3, 4, 5, 6, 7, 0, 8]
 
     DFS = DepthFirstSearch(new_state, GOAL_STATE)
     DFS.search()
