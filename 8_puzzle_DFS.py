@@ -154,7 +154,7 @@ class DepthFirstSearch:
 
         while len(stack) > 0:
             node = stack.pop()
-            print(node)
+            # print(node)
             self.solution.append(node)
 
             if node.state == self.goal_state:
@@ -171,7 +171,7 @@ class DepthFirstSearch:
 
 def main():
     # 123406758
-    new_state = [1, 2, 3, 4, 5, 0, 6, 7, 8]
+    new_state = [1, 2, 3, 4, 5, 6, 7, 8, 0]
 
     DFS = DepthFirstSearch(new_state, GOAL_STATE)
     DFS.search()
