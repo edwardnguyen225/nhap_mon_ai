@@ -130,7 +130,7 @@ def expand_node(node):
 
 
 class DepthFirstSearch:
-    def __init__(self, init_state, goal_state):
+    def __init__(self, init_state, goal_state = GOAL_STATE):
         self.init_state = init_state
         self.goal_state = goal_state
         self.solution = None
@@ -173,7 +173,7 @@ def main():
     # 123406758
     new_state = [1, 2, 3, 4, 5, 6, 7, 0, 8]
 
-    DFS = DepthFirstSearch(new_state, GOAL_STATE)
+    DFS = DepthFirstSearch(new_state)
     DFS.search()
     DFS.print_solution()
 
